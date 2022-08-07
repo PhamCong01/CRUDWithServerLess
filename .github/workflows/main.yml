@@ -9,7 +9,8 @@ jobs:
   deploy-lambda:
     runs-on: ubuntu-latest
     steps:
-      - users: actions/checkout@v2
+      - name: Checkout source code
+        uses: actions/checkout@v1
       - users: actions/setup-node@v2
         with:
           node-version: '14'
