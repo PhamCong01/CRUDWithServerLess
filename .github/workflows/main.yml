@@ -10,8 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v1
-      - users: actions/setup-node@v2
+        users: actions/checkout@v1
         with:
           node-version: '14'
       - name: npm install
